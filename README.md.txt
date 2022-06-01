@@ -1,0 +1,1 @@
+This is a simple login page. This login form checks and validates the input fields.
