@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: bisque;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;   
+}
+h3{
+    padding: 10px;
+    text-align: center;
+}
+
+.login-form{
+    margin: 10px;
+    padding: 10px;
+    background-color: chocolate;
+    width: 300px;
+    border-radius: 8px;
+    /* max-width: 100%; */
+}
+
+.input-group{
+    margin-bottom: 10px;
+    padding: 05px 0;
+}
+
+.input-group label{
+    /* display: inline-block; */
+}
+
+
+
+.input-group input{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 3px;
+}
+
+.input-group p{
+    visibility: hidden;
+}
+
+.success input{
+    border: 3px solid green;
+}
+
+.success p{
+    visibility: hidden;
+}
+
+.error input{
+    border : 3px solid red;
+}
+
+.error p{
+    visibility: visible;
+}
+
+.btn{
+    width: 100%;
+    padding: 5px;
+    font-weight: bold;
+    background :linear-gradient(rgb(51, 185, 39),rgb(209, 176, 43) )
+}
+
+
+.icon{
+    text-align: center;
+    width: 100%;
+
+}
+.fa-user{
+    color: rgb(16, 96, 121);
+    /* background-color: rgb(16, 96, 121); */
+    padding: 5px;
+    border-radius: 15px;
+
+}
+
+.form-container img{
+    /* text-align: center;
+    width: 100%; */
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* media screen less than 500 px */
+@media screen and (max-width: 500px) {
+    .form-container{
+        min-height: 100vh;
+    }
+
+    .btn{
+        width: 100%;
+        background-color: chartreuse;
+        background :linear-gradient(rgb(207, 158, 51),rgb(241, 18, 66) )
+    }
+
+    .login-form{
+        padding: 0 10px;
+        margin: 0 auto; 
+        background-color: chocolate;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+}
